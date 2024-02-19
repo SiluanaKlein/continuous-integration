@@ -13,7 +13,7 @@ jobs:
       - run: go run math.go
 
   build-and-push-docker-image:
-    name: Build and push docker image to dockerhub
+    name: Build and push docker image to dockerhub # https://github.com/marketplace/actions/build-and-push-docker-images
     needs: build-test-application
     runs-on: ubuntu-latest
 
